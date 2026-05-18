@@ -64,3 +64,59 @@ A SOC Analyst simulation platform built with Python and FastAPI that automatical
 ---
 
 ## Architecture
+
+FASTAPI APPLICATION
+↓
+INCIDENT GENERATOR
+↓
+TINYDB STORAGE
+↓
+DASHBOARD / REPORTS / INVESTIGATION WORKFLOW
+
+---
+
+## Tech Stack
+
+- Python 3.11
+- FastAPI
+- TinyDB
+- Docker
+
+---
+
+## Running the Project
+
+Local Setup
+
+Docker Setup
+API Documentation available at http://localhost:8000/docs
+
+---
+
+## Known Limitations
+
+- Incident data is fully simulated
+- No real SIEM or log ingestion integration
+- No authentication or RBAC
+- TinyDB is not suitable for production-scale environments
+- Background incident generation uses threading and is intended for demo purposes
+
+---
+
+## Future Improvements
+
+- JWT authentication
+- Role-based access control
+- PostgreSQL integration
+- Real SIEM log ingestion
+- WebSocket live incident updates
+- Analyst leaderboard
+- MITRE ATT&CK mapping
+- Email alerting system
+- Incident escalation workflow
+
+---
+
+## Disclaimer
+
+This project is intended for educational and portfolio purposes only. It simulates SOC workflows and does not replace a real SIEM or enterprise incident response platform.
